@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.body {
+  background-image: url("/img/bg.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#board {
+  background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+  width: 90vmin;
+  height: 92vmin;
+  margin-top: 2rem;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+
+.head {
+  background: linear-gradient(red, yellow);
+  border-radius: 12px;
+  transform: scale(1.1);
+}
+.snake {
+  background: purple;
+  border-radius: 10px;
+  border: solid white;
+}
+.food {
+  background: linear-gradient(red, purple);
+  border-radius: 10px;
+  border: white;
+}
+#score {
+  position: absolute;
+  font-weight: bold;
+  font-size: 39px;
+  top: 15px;
+  right: 250px;
+
+}
+
+#highScore {
+    position: absolute;
+    font-weight: bold;
+    font-size: 39px;
+    top: 60px;
+    right: 158px;
+}
